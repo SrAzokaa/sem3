@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Satisfacción</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><img src="../Media/301002972_453471326834226_3610691275301502041_n.jpg"   width="80px" height="80px"  alt=""></div>
+            <a id="name1" href="#Ryan">Ryan Sports</a>
+            <div class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="fotoo">
+        <img src="../Media/blp_deportes_futbol_0424.png" alt="">
+    </div>
+
+<div class="container">
+    <h2>Formulario de Satisfacción</h2>
+    <form id="satisfactionForm">
+        <label for="name">Nombres:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="ape">Apellidos:</label>
+        <input type="text" id="ape" name="ape" required>
+
+        <label for="dni">DNI:</label>
+        <input type="number" id="dni" name="dni" required>
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" min="1" max="100" >
+
+        <div class="radio-group">
+            <label for="gender">Sexo:</label>
+            <label><input type="radio" name="gender" value="masculino">Masculino</label>
+            <label><input type="radio" name="gender" value="femenino">Femenino</label>
+        </div>
+
+        <label for="address">Dirección:</label>
+        <textarea id="address" name="address" class="textarea"></textarea>
+
+        <label for="department">Departamento:</label>
+        <select id="department" name="department">
+            <option value="Lima">Lima</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Trujillo">Trujillo</option>
+        </select>
+
+        <label for="satisfactionLevel">Nivel de satisfacción (1 a 10):</label>
+        <input type="number" id="satisfactionLevel" name="satisfactionLevel" min="1" max="10" required>
+
+        <label for="recommend">¿Recomendaría este sitio?</label>
+        <select id="recommend" name="recommend">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <p>
+            ¿Qué productos te interesan?<br>
+            <p><label for="ia">Gimnasia</label>  <input type="checkbox" name="ia" id="ia">
+            <label for="cd">Deporte</label>  <input type="checkbox" name="cd" id="cd">
+            <label for="rb">Pesas</label>  <input type="checkbox" name="rb" id="rb">
+            
+        </p>
+
+        <label for="coment">Déjanos un comentario:</label>
+        <input type="text" id="coment" name="coment">
+
+        <div class="btn-group">
+            <button type="submit" class="btn">Enviar</button>
+            <button type="reset" class="btn">Restablecer</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
